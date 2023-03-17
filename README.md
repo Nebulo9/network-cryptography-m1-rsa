@@ -9,7 +9,7 @@ Réaliser une simulation d'attaque *DDOS* entre des objets connectés à l'aide 
 python3 ddos_server.py SERVER_IP:LISTEN_PORT
 ```
 ### `ddos_client.py`
-Si le script est éxécuté sur une machine différente de celle utilisée pour le server:
+Si le script est éxécuté sur une machine différente de celle utilisée pour éxécuter `ddos_server.py`:
 ```bash
 python3 ddos_client.py SERVER_IP:LISTEN_PORT
 ```
