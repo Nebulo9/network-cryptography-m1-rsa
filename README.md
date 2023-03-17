@@ -1,5 +1,5 @@
 # network-cryptography-m1-rsa
-Projet du module **Introduction à la cryptographie des réseaux** en Master 1 RSA (Réseaux et Systèmes autonomes).
+Projet du module **Introduction à la cryptographie et la sécurité des réseaux** en Master 1 RSA (Réseaux et Systèmes autonomes).
 
 ## Objectif du projet
 Réaliser une simulation d'attaque *DDOS* entre des objets connectés à l'aide de scripts Python.
