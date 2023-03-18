@@ -1,6 +1,6 @@
 import socket,threading,sys,ipaddress
 
-DEFAULT_TIMEOUT = 16
+DEFAULT_TIMEOUT = 3
 CONNECTED_CLIENTS = []
 STARTED = True
 
