@@ -85,8 +85,8 @@ def accept_clients():
     
 if __name__ == "__main__":
     try:
-        if len(sys.argv) != 1: raise Exception("Argument missing: PORT")
-        server_port = int(sys.argv[0])
+        if len(sys.argv) != 2: raise Exception("Argument missing: PORT")
+        server_port = int(sys.argv[1])
         server_ip = '0.0.0.0'
         ipaddress.ip_address(server_ip)
         if server_port < 1024 or server_port > 65535: raise ValueError
